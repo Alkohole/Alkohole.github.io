@@ -4,28 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Friendship with Benefits</title>
 </head>
-<div class="win_age" id="win_age1">
-    <form method="post" class="age_form">
-        <label class="label_age">
-            Укажите сколько вам лет
-            <input type="number" min="0" max="200" class="age" id="age1">
-        </label>
-        <input onclick="choose_page()" type="submit" value="Готово" class="age_submit">
-    </form>
-</div>
-
-<script type="text/javascript">
-    //var age=document.getElementById('age').value;
-    function choose_page()
-    {
-        var age = parseInt(document.getElementById('age1').value);
-        if (age > 18 && age < 200 ) {
-            document.location.replace("enabled.html");
-        }
-        if(age < 17 && age >= 0)
-        {
-            document.location.replace("end.html");
-        }
-    }
-</script>
+<body>
+    <p>Данный контен содержит материалы порнографического характера и имеет рейтинг 18+.</p>
+    <p>Пожалуйста, подтвердите свой возраст:</p>
+    <button onclick="window.location.href = 'https://Alkohole.github.io/fwb/enabled.html';">Я совершеннолетний</button>
+    <button onclick="window.location.href = 'https://Alkohole.github.io/fwb/end.html';">Я не совершеннолетний</button>
+</body>
 </html>

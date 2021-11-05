@@ -496,6 +496,97 @@ label inputter:
 <hr>
 <br>
 <br>
+
+	<table width="100%">
+	<tr>
+	<td>
+
+	<p>05.11.2021</p>
+	<p>Rus Edition v1.0:</p>
+	<p>· Был отредактирован код клавиатуры из Eng Edition v0.09.</p>
+	<p>Сами [йцукен] клавиатуры keyboard.png и keyboard2.png можно скачать по <a href="https://github.com/Alkohole/Alkohole.github.io/blob/main/news/fwb-nx/keyboard.zip?raw=true">ссылке</a>,<br>их нужно поместить в папку game либо в game\images.</p>
+	<p>· Пришлось отредактировать frame.png и залатать в нем проделаную нами дыру с альфа каналом<br>чтобы выглядело презентабельно.<p>
+		<div>frame.png до:</div>
+		<img src="Images/frame.png">
+
+		<div>2frame.png после:</div>
+		<img src="Images/2frame.png">
+		<br>
+	<br>
+	<div>· Была отредактирована иконка игры:</div>
+	<img src="Images/icon.png">
+
+	<p>· Были разделены папки сохранений на [FriendshipwithBenefits]<br>для английской версии и [FriendshipwithBenefitsNXRu] для русской версии.</p>
+
+
+	</td>
+	<td>
+
+	
+
+<div class="codebox">[йцукен]<p>Код: </p><pre><code>
+
+init python:
+    text_list1=["Й","Ц","У","К","Е","Н","Г","Ш","Щ","З","Х","Ъ","0",
+                      "Ф","Ы","В","А","П","Р","О","Л","Д","Ж","Э","0",
+                      "Я","Ч","С","М","И","Т","Ь","Б","Ю","0"]
+    text_list2=["й","ц","у","к","е","н","г","ш","щ","з","х","ъ","0",
+                      "ф","ы","в","а","п","р","о","л","д","ж","э","0",
+                      "я","ч","с","м","и","т","ь","б","ю","0"]
+    input_text = ''
+    input_header = 'NAME:'
+    text_limit = 16
+    text_list=text_list1
+    text_group=1
+
+</code></pre></div>
+
+<div class="codebox">Перевод кнопок<p>Код: </p><pre><code>
+    $ ui.hbox(xalign=0.5, yalign=1.0)
+    $ ui.textbutton("{size=+10}«Готово»{/size}", clicked=ui.returns("Done"))
+    $ui.textbutton("{size=+10}«Стереть»{/size}", clicked=ui.returns("Backspace"))
+    $ui.textbutton("{size=+10}«Отчистить все»{/size}", clicked=ui.returns("Deleteall"))
+    if text_group==1:
+        $ ui.textbutton("{size=+10}«Капс (вкл)»{/size}", clicked=ui.returns("lowercase"))
+        image keyboard = "keyboard.png"
+        hide keyboard2
+        show keyboard
+    elif text_group==2:
+        $ ui.textbutton("{size=+10}«Капс (выкл)»{/size}", clicked=ui.returns("uppercase"))
+        image keyboard2 = "keyboard2.png"
+        hide keyboard
+        show keyboard2
+</code></pre></div>
+
+<div class="codebox">Папки сохранений для русской версии<p>Код: </p><pre><code>
+	define build.name = "FriendshipWithBenefitsNXRu"
+	define config.save_directory = "FriendshipwithBenefitsNXRu"
+</code></pre></div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+				<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<br>
 </body>
 
 </html>

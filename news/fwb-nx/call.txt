@@ -1,0 +1,13 @@
+    menu:
+        "Are you sure?"
+        "Yeah, skip the prologue":
+            "What is your name?"
+            python:
+                input_header = 'Input Name:'
+            call inputter
+            python:
+                playername = input_text or "Anon"
+                playername = playername.strip()
+            jump morning
+        "No, I want to play the first hour of story!":
+            pass

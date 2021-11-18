@@ -108,74 +108,17 @@
 		<br>
 		<br>
 		<br>
-				<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<br>
 		<br>
 				<br>
 		<br>
 		<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 				<br>
 		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-				<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-				<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+
 	</td>
 	<td>
-	
-	<br>
-	<br>
 	<div>.MP3 => .OGG<br>(.WAV работает)</div>
 	<div><p>Код: </p><pre>
 		<iframe src="https://alkohole.github.io/news/fwb-nx/Audio.txt" width="650" height="600" scrolling="auto"> </iframe>
@@ -262,103 +205,16 @@
 
 	
 
-<div class="codebox"><a href="https://lemmasoft.renai.us/forums/viewtopic.php?t=25972">Автор кода</a><p>Cкрипт: </p><pre><code>
+<div class="codebox"><a href="https://lemmasoft.renai.us/forums/viewtopic.php?t=25972">Автор кода</a><p>Код: </p><pre>
+	<iframe src="https://alkohole.github.io/news/fwb-nx/keyboard.txt" width="650" height="600" scrolling="auto"> </iframe>
 
-init python:
-    text_list1=["Q","W","E","R","T","Y","U","I","O","P","0",
-                      "A","S","D","F","G","H","J","K","L","0",
-                      "Z","X","C","V","B","N","M","0"]
-    text_list2=["q","w","e","r","t","y","u","i","o","p","0",
-                      "a","s","d","f","g","h","j","k","l","0",
-                      "z","x","c","v","b","n","m","0"]
-    input_text = ''
-    input_header = 'NAME:'
-    text_limit = 16
-    text_list=text_list1
-    text_group=1
-    
-label inputter:
-    if text_group==1:
-        $text_list=text_list1
-    elif text_group==2:
-        $text_list=text_list2
-         
-    $ ui.frame(xalign=0.5, yalign=0.5)
-    $ ui.vbox()
-    $ ui.text(input_header+" "+input_text)
-    $ ui.null(height=50)
 
-    $ ui.hbox(xalign=0.5, yalign=1.0)
-    $ ui.textbutton("{size=+10}Done{/size}", clicked=ui.returns("Done"))
-    $ui.textbutton("{size=+10}Backspace{/size}", clicked=ui.returns("Backspace"))
-    $ui.textbutton("{size=+10}Clear{/size}", clicked=ui.returns("Deleteall"))
-    if text_group==1:
-        $ ui.textbutton("{size=+10}Caps (On){/size}", clicked=ui.returns("lowercase"))
-        image keyboard = "keyboard.png"
-        hide keyboard2
-        show keyboard
-    elif text_group==2:
-        $ ui.textbutton("{size=+10}Caps (Off){/size}", clicked=ui.returns("uppercase"))
-        image keyboard2 = "keyboard2.png"
-        hide keyboard
-        show keyboard2
-    $ ui.close()
+</pre></div>
 
-    $ ui.null(height=25)
+<div class="codebox"><p>Пример обращения в игре: </p><pre>
+		<iframe src="https://alkohole.github.io/news/fwb-nx/call.txt" width="650" height="600" scrolling="auto"> </iframe>
 
-    $ ui.hbox(xalign= 0.5)
-
-    python:
-        for text_code in text_list:
-            if text_code=="0":
-                ui.close()
-                ui.hbox(xalign= 0.5)
-            elif  len(input_text)<=text_limit-1:
-                ui.textbutton('{size=+57}   {/size}', clicked=ui.returns(text_code))
-    $ ui.close()
-    $ ui.close()
-    $ button_selection=ui.interact()
-               
-    if button_selection=="Backspace":
-        $ input_text=input_text[:-1]
-        jump inputter
-    elif button_selection=="Deleteall":
-        $ input_text=''
-        jump inputter
-    elif button_selection=="uppercase":
-        $text_group=1
-        jump inputter
-    elif button_selection=="lowercase":
-        $text_group=2
-        jump inputter
-    elif button_selection=="Done":
-        hide keyboard
-        hide keyboard2
-        return
-    $ select_text=button_selection
-
-    python:
-        for text_code in text_list:
-            if select_text==text_code:
-                input_text += text_code
-    jump inputter
-</code></pre></div>
-
-<div class="codebox"><p>Пример обращения в игре: </p><pre><code>
-                    menu:
-                        "Are you sure?"
-                        "Yeah, skip the prologue":
-                            "What is your name?"
-                            python:
-                                input_header = 'Input Name:'
-                            call inputter
-                            python:
-                                playername = input_text or "Anon"
-                                playername = playername.strip()
-                            jump morning
-                        "No, I want to play the first hour of story!":
-                            pass
-</code></pre></div>
+</pre></div>
 
 </td>
 </tr>

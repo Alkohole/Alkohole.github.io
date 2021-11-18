@@ -1,0 +1,22 @@
+       menu:
+           "Вы уверены?"
+           "Да, пропустить пролог":
+               #python:
+               #    playername = renpy.input("Как Ваше имя?")
+               #    playername = playername.strip()
+               #    if not playername:
+               #        playername = "Аноним"
+               jump morning
+           "Нет, я играю впервые и хочу увидеть пролог!":
+               pass
+
+
+
+        unnamedmc "Моё имя..."
+    #        python:
+    #            playername = renpy.input("Как Вас зовут?")
+    #            playername = playername.strip()
+    #
+    #            if not playername:
+    #                playername = "Аноним"
+            mc "[playername]"

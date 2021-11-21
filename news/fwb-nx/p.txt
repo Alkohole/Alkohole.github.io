@@ -1,0 +1,24 @@
+#Fix размера клавиатуры
+ui.textbutton('{size=+72}   {/size}', clicked=ui.returns(text_code))
+
+#Размер текста в окне и высота окна
+define gui.text_size = 24
+define gui.textbox_height = 160
+
+#Размер текста в кнопках
+define gui.quick_button_text_size = 18
+define gui.slot_button_text_size = 16
+
+#Расширение текстового окна
+define gui.dialogue_xpos = 200
+define gui.dialogue_ypos = 46
+define gui.dialogue_width = 895
+
+#Изминение положения имени пермонажей
+define gui.name_xpos = 194
+define gui.name_ypos = 12
+
+#Изминение шрифта
+define gui.text_font = "gui/fonts/Mittelschrift.ttf"
+define gui.name_text_font = "gui/fonts/CoreSans.ttf"
+define gui.interface_text_font = "gui/fonts/CoreSans.ttf"

@@ -368,8 +368,4 @@
         "Выйти":
             if fr == 1:
                 jump finalworldmap
-<<<<<<< HEAD
             jump worldmap
-=======
-            jump worldmap
->>>>>>> 15d46baf6e27e0959a94893e3b0e117e04ea78bf

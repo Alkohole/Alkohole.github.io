@@ -1,0 +1,14 @@
+$ ui.hbox(xalign=0.5, yalign=1.0)
+$ ui.textbutton("{size=+10}«Готово»{/size}", clicked=ui.returns("Done"))
+$ui.textbutton("{size=+10}«Стереть»{/size}", clicked=ui.returns("Backspace"))
+$ui.textbutton("{size=+10}«Отчистить все»{/size}", clicked=ui.returns("Deleteall"))
+if text_group==1:
+    $ ui.textbutton("{size=+10}«Капс (вкл)»{/size}", clicked=ui.returns("lowercase"))
+    image keyboard = "keyboard.png"
+    hide keyboard2
+    show keyboard
+elif text_group==2:
+    $ ui.textbutton("{size=+10}«Капс (выкл)»{/size}", clicked=ui.returns("uppercase"))
+    image keyboard2 = "keyboard2.png"
+    hide keyboard
+    show keyboard2

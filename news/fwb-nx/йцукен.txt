@@ -1,0 +1,31 @@
+init python:
+    text_list1=["Й","Ц","У","К","Е","Н","Г","Ш","Щ","З","Х","Ъ","0",
+                      "Ф","Ы","В","А","П","Р","О","Л","Д","Ж","Э","0",
+                      "Я","Ч","С","М","И","Т","Ь","Б","Ю","0"]
+    text_list2=["й","ц","у","к","е","н","г","ш","щ","з","х","ъ","0",
+                      "ф","ы","в","а","п","р","о","л","д","ж","э","0",
+                      "я","ч","с","м","и","т","ь","б","ю","0"]
+    input_text = ''
+    input_header = 'NAME:'
+    text_limit = 16
+    text_list=text_list1
+    text_group=1
+
+Перевод кнопок
+Код:
+
+
+    $ ui.hbox(xalign=0.5, yalign=1.0)
+    $ ui.textbutton("{size=+10}«Готово»{/size}", clicked=ui.returns("Done"))
+    $ui.textbutton("{size=+10}«Стереть»{/size}", clicked=ui.returns("Backspace"))
+    $ui.textbutton("{size=+10}«Отчистить все»{/size}", clicked=ui.returns("Deleteall"))
+    if text_group==1:
+        $ ui.textbutton("{size=+10}«Капс (вкл)»{/size}", clicked=ui.returns("lowercase"))
+        image keyboard = "keyboard.png"
+        hide keyboard2
+        show keyboard
+    elif text_group==2:
+        $ ui.textbutton("{size=+10}«Капс (выкл)»{/size}", clicked=ui.returns("uppercase"))
+        image keyboard2 = "keyboard2.png"
+        hide keyboard
+        show keyboard2

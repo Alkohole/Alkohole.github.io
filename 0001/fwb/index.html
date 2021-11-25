@@ -8,6 +8,8 @@
 	<meta name="description" content="Deadline Studio">
 	<meta name="author" content="Alkohole">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/q.css">
+	<script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -138,7 +140,7 @@ handheld_mem=665
 		</td>
 		<td>
 		<h2 align="right">
-		<p><button onclick="window.location.href = 'https://vk.com/topic-153892297_48258804';">Комментарии</button></p>
+		<p><button onclick="window.location.href = 'https://vk.com/topic-153892297_48258804';">Комментарии в нашей группе</button></p>
 		<p><button onclick="window.location.href = 'https://vk.com/topic-153892297_48258812';">Спасибо</button></p>
 
 		<p><button onclick="window.location.href = 'https://Alkohole.github.io/';">Вернуться к списку проектов</button></p>
@@ -148,8 +150,19 @@ handheld_mem=665
 		</td>
 		</tr>
 		</table>
-		
 
+<div class="sl"><br></div>
+<div class="sw">
+<script type="text/javascript">
+  VK.init({apiId: 8010309, onlyWidgets: true});
+</script>
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 15, attach: "video"});
+</script>
+</div>
 </body>
 
 </html>

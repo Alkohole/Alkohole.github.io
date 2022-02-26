@@ -15,3 +15,51 @@
   width: 25%;
   float: left;
 }
+
+.op {
+  display: block;
+  width: 75%;
+  float: left;
+}
+
+.sh {
+  display: block;
+  width: 25%;
+  float: right;
+}
+
+.nm {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+.ed {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
+
+.in {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+
+.bar1 {
+display: inline-block;
+width: 30%;
+float: left;
+}
+
+.bar2 {
+display: inline-block;
+width: 70%;
+float: left;
+}
+
+.steam {
+display: inline-block;
+width: 646px;
+float: left;
+}

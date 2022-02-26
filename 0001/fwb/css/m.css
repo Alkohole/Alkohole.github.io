@@ -1,0 +1,70 @@
+@media only screen and (max-width: 768px) {
+  .sw {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+  
+  .sl {
+  display: block;
+  width: 100%;
+  float: none;
+  }
+  
+  .ss {
+  display: block;
+  width: 100%;
+  float: none;
+  }
+  
+  .op {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+  
+  .sh {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+  
+  .nm {
+  display: inline-block;
+  width: 70%;
+  float: left;
+  }
+  
+  .ed {
+  display: inline-block;
+  width: 30%;
+  float: right;
+  }
+  
+  .in {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+
+  .bar1 {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+
+  .bar2 {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  }
+
+  .steam {
+  display: inline-block;
+  width: 100%;
+  float: left;
+  }
+
+  *[align] { text-align:inherit; }
+  * { text-align:expression(this.align ? this.parentNode.currentStyle['textAlign'] : ''); }
+}

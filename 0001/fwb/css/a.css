@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1476px) {
 
 .sw {
   display: inline-block;
@@ -31,11 +31,6 @@
   float: right;
 }
 
-.in {
-  display: inline-block;
-  width: 100%;
-  float: left;
-}
 
 .bar1 {
 display: inline-block;
@@ -51,20 +46,23 @@ float: left;
 
 .steam {
 display: inline-block;
-width: 646px;
+width: 98%;
 float: left;
 }
 
-.sid {
-width: 70%;
-margin: 50px auto;
-
-}
 
 .op {
   display: block;
   width: 100%;
   float: left;
+}
+
+.sid {
+width: 70%;
+margin: 50px auto;
+padding: 10px;
+background: #f2f1f0;
+border-radius: 10px;
 }
   
 .shr {
@@ -80,5 +78,12 @@ margin: 50px auto;
   text-align: center;
   float: none;
 }
-
+.fl {
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+  height: 420px;
+  background: #111112;
+  border-radius: 5px;
+}
 }

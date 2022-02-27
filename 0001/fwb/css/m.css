@@ -1,27 +1,27 @@
 @media only screen and (max-width: 850px) {
-  .sw {
+.sw {
   display: inline-block;
   width: 100%;
   float: none;
-  }
+}
   
-  .sl {
+.sl {
   display: block;
   width: 100%;
   float: none;
-  }
+}
   
-  .ss {
+.ss {
   display: block;
   width: 100%;
   float: none;
-  }
+}
   
-  .op {
+.op {
   display: inline-block;
   width: 100%;
   float: none;
-  }
+}
   
 .shr {
   display: inline-block;
@@ -36,48 +36,56 @@
   text-align: center;
   float: none;
 }
+
+.fl {
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+  height: 420px;
+  background: #111112;
+  border-radius: 5px;
+}
   
-  .nm {
+.nm {
   display: inline-block;
   width: 70%;
   float: left;
-  }
+}
   
-  .ed {
+.ed {
   display: inline-block;
   width: 30%;
   float: right;
-  }
+}
   
-  .in {
+
+
+.sid {
+  width: 95%;
+  margin: 5px auto;
+  padding: 5px;
+  background: #f2f1f0;
+  border-radius: 10px;
+}
+
+.bar1 {
   display: inline-block;
   width: 100%;
   float: none;
-  }
+}
 
-
-  .sid {
-    width: 100%;
-  }
-
-  .bar1 {
+.bar2 {
   display: inline-block;
   width: 100%;
   float: none;
-  }
+}
 
-  .bar2 {
-  display: inline-block;
-  width: 100%;
-  float: none;
-  }
-
-  .steam {
+.steam {
   display: inline-block;
   width: 100%;
   float: left;
-  }
+}
 
-  *[align] { text-align:inherit; }
-  * { text-align:expression(this.align ? this.parentNode.currentStyle['textAlign'] : ''); }
+*[align] { text-align:inherit; }
+* { text-align:expression(this.align ? this.parentNode.currentStyle['textAlign'] : ''); }
 }

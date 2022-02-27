@@ -1,5 +1,5 @@
 body {
-  background-color: #f2f1f0;
+  background-color: #EEE9E2;
   font-family: 'Courier New'; 
   src: local('Courier New'),
     url(/CourierNew.ttf); 
@@ -7,7 +7,22 @@ body {
 
 
 
-@media only screen and (min-width: 1301px) {
+.in {
+  display: inline-block;
+  width: 100%;
+  float: none;
+}
+
+
+@media only screen and (min-width: 1477px) {
+
+.sid {
+width: 70%;
+margin: 50px auto;
+padding: 10px;
+background: #f2f1f0;
+border-radius: 10px;
+}
 
 
 .sw {
@@ -39,6 +54,14 @@ body {
   width: 25%;
   float: right;
 }
+.fl {
+  display: inline-block;
+  text-align: center;
+  width: 260px;
+  height: 420px;
+  background: #111112;
+  border-radius: 5px;
+}
 
 .nm {
   display: inline-block;
@@ -52,11 +75,7 @@ body {
   float: right;
 }
 
-.in {
-  display: inline-block;
-  width: 100%;
-  float: left;
-}
+
 
 .bar1 {
 display: inline-block;
@@ -76,9 +95,6 @@ width: 646px;
 float: left;
 }
 
-.sid {
-width: 70%;
-margin: 50px auto;
-}
+
 
 }

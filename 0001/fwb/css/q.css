@@ -14,7 +14,12 @@ body {
 }
 
 
+
+
+
 @media only screen and (min-width: 1477px) {
+
+
 
 .sid {
 width: 70%;
@@ -56,11 +61,11 @@ border-radius: 10px;
 }
 .fl {
   display: inline-block;
-  text-align: center;
   width: 260px;
   height: 420px;
   background: #111112;
   border-radius: 5px;
+  float: right;
 }
 
 .nm {

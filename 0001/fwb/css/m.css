@@ -71,12 +71,14 @@
 .bar1 {
   display: inline-block;
   width: 100%;
+  text-align: center;
   float: none;
 }
 
 .bar2 {
   display: inline-block;
   width: 100%;
+  text-align: center;
   float: none;
 }
 

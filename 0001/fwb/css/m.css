@@ -19,6 +19,7 @@
   
 .op {
   display: inline-block;
+  margin: 25px auto;
   width: 100%;
   float: none;
 }
@@ -39,11 +40,14 @@
 
 .fl {
   display: inline-block;
-  text-align: center;
-  width: 260px;
+  width: 280px;
   height: 420px;
   background: #111112;
-  border-radius: 5px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 15px 17px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 15px 20px 10px rgba(76, 70, 124, 0.35);
+  float: none;
 }
   
 .nm {
@@ -63,9 +67,20 @@
 .sid {
   width: 95%;
   margin: 5px auto;
+  margin-right: 32px;
+
+
+}
+
+.in {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  box-shadow: 0px 15px 17px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 15px 20px 10px rgba(76, 70, 124, 0.35);
   padding: 5px;
-  background: #f2f1f0;
-  border-radius: 10px;
+  background: rgba(242, 241, 240, .75);
+  border-radius: 15px;
 }
 
 .bar1 {

@@ -1,0 +1,181 @@
+
+
+body {
+  font-family: 'Courier New'; 
+  src: local('Courier New'),
+    url(/CourierNew.ttf);
+  position: relative;
+  overflow-y: scroll;
+}
+
+button {
+  font-family: 'Courier New'; 
+  src: local('Courier New'),
+    url(/CourierNew.ttf);
+}
+
+.on {
+  display: inline-block;
+  width: 100%;
+  float: none;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.pup {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.end {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+
+.button1 {
+  background: rgba(242, 241, 240, .75);
+  color:#000;
+  display: inline-block;
+  margin:20px auto;
+  padding:10px 10px;
+  transition:all 0.3s;
+  border-radius: 5px;
+  }
+ .button1:hover{
+  box-shadow:0px -5px 0 #FFB6C1 inset;
+}
+
+button {
+  background: rgba(242, 241, 240, .75);
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        border-radius: 4px;
+    color: #000;
+    display: inline-block;
+        margin: 20px auto;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 6px;
+    vertical-align: middle;
+        text-decoration:none;
+}
+button:hover, button:focus {
+   border-color: rgba(82, 168, 236, 0.8);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+@media only screen and (min-width: 1477px) {
+
+.in {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  box-shadow: 0px 30px 40px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 30px 60px 10px rgba(76, 70, 124, 0.35);
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(242, 241, 240, .75);
+}
+
+
+
+.sid {
+width: 70%;
+margin: 50px auto;
+}
+
+
+.sw {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.sl {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.ss {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.op {
+  display: block;
+  width: 70%;
+  float: left;
+}
+
+.sh {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
+
+
+
+.fl {
+  display: inline-block;
+  width: 280px;
+  height: 420px;
+  background: #111112;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 15px 17px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 15px 20px 10px rgba(76, 70, 124, 0.35);
+  float: right;
+}
+
+.nm {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+.ed {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
+
+
+
+.bar1 {
+display: inline-block;
+width: 30%;
+float: left;
+}
+
+.bar2 {
+display: inline-block;
+width: 70%;
+float: left;
+}
+
+.steam {
+display: inline-block;
+width: 646px;
+float: left;
+}
+
+
+
+}

@@ -8,6 +8,12 @@ body {
   overflow-y: scroll;
 }
 
+button {
+  font-family: 'Courier New'; 
+  src: local('Courier New'),
+    url(/CourierNew.ttf);
+}
+
 .on {
   display: inline-block;
   width: 100%;
@@ -22,7 +28,14 @@ img {
   opacity: 0.9;
 }
 
-
+.pup {
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
 
 
 

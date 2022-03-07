@@ -1,5 +1,3 @@
-
-
 @media only screen and (max-width: 850px) {
 .sw {
   display: inline-block;
@@ -43,7 +41,7 @@
 .fl {
   display: inline-block;
   width: 280px;
-  height: 380px;
+  height: 420px;
   background: #111112;
   text-align: center;
   border-radius: 10px;
@@ -53,14 +51,13 @@
 }
   
 .nm {
-  display: block;
+  display: inline-block;
   width: 70%;
   float: left;
 }
   
 .ed {
-  display: block;
-  position: absolute;
+  display: inline-block;
   width: 30%;
   float: right;
 }
@@ -109,4 +106,3 @@
 *[align] { text-align:inherit; }
 * { text-align:expression(this.align ? this.parentNode.currentStyle['textAlign'] : ''); }
 }
-

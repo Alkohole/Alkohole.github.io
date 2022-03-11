@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap') {}
+
 .transition-fade {
   transition: .4s;
   opacity: 1;
@@ -97,17 +99,13 @@ input[name="r"] {
 
 
 body {
-  font-family: 'Courier New'; 
-  src: local('Courier New'),
-    url(/CourierNew.ttf);
+	font-family: 'Nunito', sans-serif;
   position: relative;
   overflow-y: scroll;
 }
 
 button {
-  font-family: 'Courier New'; 
-  src: local('Courier New'),
-    url(/CourierNew.ttf);
+  font-family: 'Nunito', sans-serif;
 }
 
 .on {
@@ -207,7 +205,7 @@ img.shos {
 
 
 .sid {
-width: 70%;
+width: 950px;
 margin: 50px auto;
 }
 

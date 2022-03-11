@@ -90,11 +90,10 @@ input[name="r"] {
 }
 
 .navigation {
-  position: absolute;
+  position: relative;
   display: flex;
-  left: 40%;
+  left: 35%;
   margin-bottom: 8px;
-  transform: translate(-50%, -50%);
 }
 
 

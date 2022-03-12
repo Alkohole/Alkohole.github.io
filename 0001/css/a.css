@@ -1,4 +1,4 @@
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 951px) {
 
 .sw {
   display: inline-block;
@@ -73,6 +73,8 @@ float: left;
 .sid {
 width: 720px;
 margin: 50px auto;
+position: relative;
+z-index: 2;
 }
   
 .shr {

@@ -170,13 +170,6 @@ img.shos {
   transform: scale(0.9);
 }
 
-.pup {
-  position: relative;
-  align-items: center;
-  left: 40%;
-  margin-top: 10%;
-  width: 500px;
-}
 
 
 
@@ -231,6 +224,13 @@ img.shos {
 }
 
 @media only screen and (min-width: 1000px) {
+.pup {
+  margin: 100px auto;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 500px;
+}
 
 
 .shr {

@@ -1,5 +1,11 @@
 @media only screen and (max-width: 951px) {
-
+.pup {
+  margin: 100px auto;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 500px;
+}
 .sw {
   display: inline-block;
   width: 50%;

@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap') {}
+
+.transition-fade {
+  transition: .4s;
+  opacity: 1;
+}
+
+img.prof {
+  style="width:128px; height: 128px; border-radius: 64px; position: relative; float: none; border-style: dotted; border-color: #1c87c9;
+}
+
+img.prof:hover {
+  border-color: #FFFF00;
+}
+
+.st {
+  position: sticky;
+  bottom: 0;
+  z-index: 1;
+}
+
+.waves {
+  width: 101%;
+  height:15vh;
+  margin-bottom:-12px; /*Fix for safari gap*/
+  margin-left: -7px;
+  position: sticky;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+hr {
+border: 0;
+height: 1px;
+background: rgba(70, 70, 70, 0.1);
+background-image: -webkit-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -moz-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -ms-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -o-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+}
+
+.p18 {
+  position: absolute;
+  margin-left: 50px;
+  margin-bottom: 200%;
+  opacity: .5;
+  transform: translate(-50%, -50%);
+  float: none;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.slider {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: all .6s ease;
+
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: rgba(242, 241, 240, 1);
+  border: 1px solid #a6a6a6;
+  opacity: .7;
+  border-radius: 10px;
+  transition: all .4s ease;
+}
+
+.bar:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  left: 35%;
+  margin-bottom: 8px;
+}
+
+
+body {
+	font-family: 'Nunito', sans-serif;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: linear-gradient(60deg, rgba(70,209,219,1) 0%, rgba(0,222,252,1) 100%);
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+}
+
+.on {
+  display: inline-block;
+  width: 100%;
+  float: none;
+}
+
+img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+img.shos {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 15px 0px rgba(76, 70, 124, 0.5);
+  transform: scale(0.9);
+}
+
+
+
+
+.end {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.button1 {
+  background: rgba(242, 241, 240, .75);
+  color:#000;
+  display: inline-block;
+  margin:20px auto;
+  padding:10px 10px;
+  transition:all 0.3s;
+  border: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  }
+ .button1:hover{
+  box-shadow:0px -5px 0 #FFFF00 inset; /*#FFB6C1*/
+  background: rgba(0, 232, 244, .75);
+  border-radius: 10px;
+  border: 3px;
+  border-color: #FFFF00;
+}
+
+.button2 {
+  background: rgba(242, 241, 240, .75);
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        border-radius: 4px;
+    color: #000;
+    display: inline-block;
+        margin: 20px auto;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 6px;
+    vertical-align: middle;
+        text-decoration:none;
+}
+.button2:hover, .button2:focus {
+   border-color: rgba(82, 168, 236, 0.8);
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+@media only screen and (min-width: 1000px) {
+.pup {
+  margin: 100px auto;
+  position: relative;
+  text-align: center;
+  top: 0;
+  width: 500px;
+}
+
+
+.shr {
+  display: block;
+  width: 30%;
+  float: right;
+  align-items: center;
+  background-color: rgba(70, 70, 70, .8);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+
+.in {
+  display: inline-block;
+  width: 100%;
+  float: none;
+  box-shadow: 0px 30px 40px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 30px 60px 10px rgba(76, 70, 124, 0.35);
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(242, 241, 240, .75);
+}
+
+
+
+.sid {
+  position: relative;
+width: 950px;
+margin: 50px auto;
+z-index: 2;
+}
+
+
+.sw {
+  display: inline-block;
+  width: 50%;
+  float: left;
+}
+
+.sl {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.ss {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.dodo {
+  display: inline-block;
+  width: 100%;
+}
+
+.op {
+  display: block;
+  width: 70%;
+  float: left;
+}
+
+.opi {
+  display: block;
+  width: 70%;
+  float: left;
+  background-color: rgba(70, 70, 70, .8);
+  border-top-left-radius: 10px;
+}
+
+.opa {
+  color: #fff;
+  padding-top: 15px;
+  display: block;
+  width: 70%;
+  float: left;
+  background-color: rgba(70, 70, 70, .8);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.sh {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
+
+
+
+.fl {
+  display: inline-block;
+  width: 280px;
+  height: 390px;
+  background: #111112;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 15px 17px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 15px 20px 10px rgba(76, 70, 124, 0.35);
+  float: right;
+}
+
+.nm {
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+.ed {
+  display: inline-block;
+  width: 30%;
+  float: right;
+}
+
+
+
+.bar1 {
+display: inline-block;
+width: 30%;
+float: left;
+}
+
+.bar2 {
+display: inline-block;
+width: 70%;
+float: left;
+}
+
+.steam {
+display: inline-block;
+width: 646px;
+float: left;
+}
+
+.do {
+  display: inline-block;
+  width: 29%;
+  float: right;
+}
+
+}

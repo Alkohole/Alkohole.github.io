@@ -1,0 +1,97 @@
+body {
+	background-color: #4682b4;
+	margin: 0px;
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
+html {
+	height: 100%;
+}
+
+.start {
+	display: inline-block;
+	position: sticky;
+	background-color: #bbbbbb;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.stt {
+	display: block;
+	margin: 3px;
+	width: 98%;
+	height: 31px;
+}
+
+.sh {
+	display: inline-block;
+	width: 6vh;
+	height: 70%;
+	border-color: #828282;
+	border-style: outset;
+	text-align: center;
+}
+
+.time {
+	display: inline-block;
+	width: 8vh;
+	height: 70%;
+	border-color: #828282;
+	border-style: inset;
+	float: right;
+	text-align: center;
+}
+
+.window1 {
+	display: block;
+	position: absolute;
+	width: 600px;
+	height: 500px;
+	background-color: #bbbbbb;
+	border-color: #828282;
+	border-style: inset;
+}
+
+.window2 {
+	display: block;
+	position: absolute;
+	width: 160px;
+	height: 215px;
+	margin-top: 50px;
+	margin-left: 600px;
+	background-color: #bbbbbb;
+	border-color: #828282;
+	border-style: inset;
+}
+
+.window3 {
+	display: block;
+	position: absolute;
+	width: 320px;
+	height: 521px;
+	margin-top: 240px;
+	margin-left: 400px;
+	background-color: #bbbbbb;
+	border-color: #828282;
+	border-style: inset;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}

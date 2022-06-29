@@ -73,6 +73,7 @@ float: left;
 .sid {
 width: 720px;
 margin: 50px auto;
+z-index: 0;
 }
   
 .shr {

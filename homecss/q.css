@@ -4,14 +4,15 @@
   transition: .4s;
   opacity: 1;
 }
+
 hr {
 border: 0;
 height: 1px;
 background: rgba(70, 70, 70, 0.1);
-background-image: -webkit-linear-gradient(left, #f2f1f0, #b3b3b3, #f2f1f0);
-background-image: -moz-linear-gradient(left, #f2f1f0, #b3b3b3, #f2f1f0);
-background-image: -ms-linear-gradient(left, #f2f1f0, #b3b3b3, #f2f1f0);
-background-image: -o-linear-gradient(left, #f2f1f0, #b3b3b3, #f2f1f0);
+background-image: -webkit-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -moz-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -ms-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
+background-image: -o-linear-gradient(left, #46D1DB, #FFFF00, #46D1DB);
 }
 
 .p18 {
@@ -99,9 +100,20 @@ input[name="r"] {
 
 
 body {
-	font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   position: relative;
   overflow-y: scroll;
+  overflow-x: hidden;
+  background: rgba(0,222,252,1);
+  z-index: 0;
+}
+
+body.izi {
+  font-family: 'Nunito', sans-serif;
+  position: relative;
+  overflow-y: scroll;
+  background: #121212;
+  color: #eee;
 }
 
 .qqq {
@@ -144,24 +156,37 @@ img.shos {
 
 .end {
   display: block;
+  position: relative;
   width: 100%;
   text-align: center;
+  z-index: 2;
 }
+.aaa {color: #777;}
+.aaa:hover {color: #999;}
 
 
 .button1 {
-  background: rgba(242, 241, 240, .75);
+  background: rgba(200, 200, 200, .75);
   color:#000;
   display: inline-block;
   margin:20px auto;
   padding:10px 10px;
   transition:all 0.3s;
-  border-radius: 5px;
+  border-color: #000;
+  border-style: solid;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   }
  .button1:hover{
-  box-shadow:0px -5px 0 #FFB6C1 inset;
+  box-shadow:0px -5px 0 #660099 inset; /*#FFB6C1*/
+  background: rgba(25, 25, 112, .75);
+  border-radius: 10px;
+  border-color: #660099;
+  color: #fff;
+  border-style: double;
 }
-
 .button2 {
   background: rgba(242, 241, 240, .75);
     border: 1px solid #CCCCCC;
@@ -205,13 +230,32 @@ img.shos {
   padding: 10px;
   border-radius: 15px;
   background: rgba(242, 241, 240, .75);
+  border-style: solid;
+  border-color: rgba(255, 215, 0, .9);
+}
+
+.intro {
+  display: inline-block;
+  width: 390px;
+  height: 102px;
+  float: none;
+  box-shadow: 0px 30px 40px -10px rgba(76, 70, 124, 0.5);
+  box-shadow: 0px 30px 60px 10px rgba(76, 70, 124, 0.35);
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(242, 241, 240, .75);
+  border-style: solid;
+  border-color: rgba(255, 215, 0, .9);
+
 }
 
 
 
 .sid {
+  position: relative;
 width: 950px;
 margin: 50px auto;
+z-index: 0;
 }
 
 
@@ -300,14 +344,16 @@ margin: 50px auto;
 
 .bar1 {
 display: inline-block;
-width: 30%;
+width: 1%;
 float: left;
+text-align: left;
 }
 
 .bar2 {
 display: inline-block;
-width: 70%;
+width: 99%;
 float: left;
+text-align: right;
 }
 
 .steam {

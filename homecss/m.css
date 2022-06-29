@@ -68,6 +68,7 @@
   width: 95%;
   margin: 5px auto;
   margin-right: 32px;
+  z-index: 0;
 
 
 }

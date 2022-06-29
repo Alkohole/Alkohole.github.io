@@ -1,11 +1,14 @@
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .twinkling{
   background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
   z-index:1;
+  overflow-x: hidden;
 
   -moz-animation:move-twink-back 200s linear infinite;
   -ms-animation:move-twink-back 200s linear infinite;
@@ -29,6 +32,7 @@
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index:0;
+  overflow-x: hidden;
 }
 
 .stars, .twinkling, .clouds {
@@ -126,3 +130,4 @@
     }
   }
 }
+

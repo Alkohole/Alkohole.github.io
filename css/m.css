@@ -1,4 +1,27 @@
 @media only screen and (max-width: 720px) {
+  
+.blob {
+  display: block;
+    font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+    align-content: center;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    color: red;
+    height: 20px;
+    margin: 0 auto;
+    width: 280px;
+    top: -7px;
+    background: rgba(70,70,70,0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 0;
+}
+
+#mobile {
+  margin-top: 60px;
+}
 
 .pup {
   margin: 100px auto;

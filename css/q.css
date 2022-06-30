@@ -92,7 +92,9 @@ html.is-animating .transition-fade {
   height: 100%;
 }
 
-
+.blob {
+  display: none;
+}
 
 .bar {
   height: 8px;

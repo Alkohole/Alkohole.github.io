@@ -179,8 +179,9 @@ img.shos {
 
 .end {
   display: block;
-  position: relative;
+  position: absolute;
   width: 100%;
+  bottom: 30px;
   text-align: center;
   z-index: 2;
 }

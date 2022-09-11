@@ -1,0 +1,69 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: rgba(200, 200, 200, .9);
+}
+.window {
+	display: block;
+	position: relative;
+	width: 600px;
+	height: 400px;
+	background-color: rgba(255, 255, 255, .5);
+	border-radius: 10px;
+	top: 100px;
+	left: 100px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c8c8c8;
+}
+.win-box {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.top-bar {
+	display: block;
+	position: relative;
+	top: 0px;
+	width: 100%;
+	height: 38px;
+	border-bottom-style: solid;
+	font-size: 25px;
+	vertical-align: text-top;
+	border-width: 1px;
+	border-color: #c8c8c8;
+}
+.name-top-bar {
+	padding-left: 10px;
+	padding-top: 6px;
+}
+.menu-bar {
+	display: block;
+	position: relative;
+	float: left;
+	overflow-x: auto;
+	height: 100%;
+	width: 20%;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: #c8c8c8;
+}
+.menu-button {
+	display: block;
+	position: relative;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #c8c8c8;
+	font-size: 18px;
+	height: 20px;
+	width: 100%;
+}
+.content {
+	display: block;
+	position: relative;
+	float: right;
+	width: 79%;
+	height: 100%;
+	overflow-x: auto;
+}
